@@ -554,7 +554,7 @@ h4 {
 .hero__main {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
@@ -708,7 +708,7 @@ h4 {
 .service-card__title {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 @media (max-width: 767px) {
   .service-card__title {
@@ -804,10 +804,10 @@ h4 {
   display: flex;
   flex-direction: column;
   row-gap: 26px;
-  align-items: start;
+  align-items: flex-start;
   padding: 60px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1280px) {
   .banner__body {
     padding: 50px;
     row-gap: 20px;
@@ -826,27 +826,62 @@ h4 {
   }
 }
 
-.studies {
-  padding: 70px 60px;
-  color: var(--color-light);
-  background-color: var(--color-dark);
-  border-radius: var(--border-radius-large);
+@media (min-width: 1281px) {
+  .studies {
+    padding: 70px 60px;
+  }
+}
+@media (min-width: 768px) {
+  .studies {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-radius: var(--border-radius-large);
+    padding: 50px;
+  }
 }
 .studies__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+@media (max-width: 767px) {
+  .studies__list {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    width: 100vw;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    padding-right: 20px;
+  }
+}
 .studies__item {
+  --studiesItemPaddingX: 64px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
-.studies__item:not(:first-child) {
-  padding-left: 64px;
+@media (max-width: 1280px) {
+  .studies__item {
+    --studiesItemPaddingX: 32px;
+  }
 }
-.studies__item:not(:last-child) {
-  padding-right: 64px;
-  border-right: 1px solid var(--color-light);
+@media (min-width: 768px) {
+  .studies__item:not(:first-child) {
+    padding-left: var(--studiesItemPaddingX);
+  }
+  .studies__item:not(:last-child) {
+    padding-right: var(--studiesItemPaddingX);
+    border-right: 1px solid var(--color-light);
+  }
+}
+@media (max-width: 767px) {
+  .studies__item {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-radius: var(--border-radius-large);
+    padding: 42px 50px;
+    min-width: 350px;
+    scroll-snap-align: start;
+  }
 }
 .studies__description {
   font-size: 18px;
