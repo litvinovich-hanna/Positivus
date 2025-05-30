@@ -20,7 +20,8 @@
     }
 
     &__description {
+        @include fluid-text(18, 16);
+        
         max-width: 580px;
-        font-size: 18px;
     }
 }
