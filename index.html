@@ -49,7 +49,6 @@
 
 		<section class="section container section--hidden-x">
 			<div class="hero">
-
 				<div class="hero__main">
 					<div class="hero__body">
 						<h1 class="hero__title">Navigating the digital landscape for success</h1>
@@ -60,7 +59,6 @@
 					</div>
 					<img src="/images/hero-bg.svg" alt="" class="hero__image" width="600px" height="515px" loading="lazy">
 				</div>
-
 				<div class="hero__partners">
 					<h2 class="visually-hidden">Our partners</h2>
 					<ul class="hero__partners-list">
@@ -84,7 +82,6 @@
 						</li>
 					</ul>
 				</div>
-
 			</div>
 		</section>
 
@@ -227,7 +224,6 @@
 								</article>
 							</li>
 						</ul>
-
 						<div class="services__banner banner">
 							<div class="banner__inner">
 								<div class="banner__body">
@@ -240,19 +236,17 @@
 								<img class="banner__image hidden-mobile" src="./images/services/banner-bg.svg" alt="" width="494px" height="394px" loading="lazy">
 							</div>
 						</div>
-
 					</div>
 				</div>
 		</section>
 
 		<section class="section container">
-			<header class="section__header">
+			<div class="section__header">
 				<h2 class="section__title puddle-bg">Case Studies</h2>
 				<div class="section__description">
 					<p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
 				</div>
-			</header>
-
+			</div>
 			<div class="section__body">
 				<div class="studies">
 					<ul class="studies__list">
@@ -672,8 +666,9 @@ Skilled in creating compelling, SEO-optimized content for various industries</p>
 				<div class="contact-us">
 					<form class="contact-us__form">
 						<fieldset class="contact-us__request-types radios">
+							<legend class="contact-us__title visually-hidden">Request type</legend>
 							<label class="radios__item radio">
-								<input class="radio__input visually-hidden" type="radio" name="request-type" value="Sai Hi">
+								<input class="radio__input visually-hidden" type="radio" name="request-type" value="Sai Hi" checked>
 								<span class="radio__emulator"></span>
 								<span class="radio__label">Say Hi</span>
 							</label>
@@ -694,7 +689,7 @@ Skilled in creating compelling, SEO-optimized content for various industries</p>
 							</div>
 							<div class="contact-us__field field">
 								<label for="userMessage" class="field__label">Message*</label>
-								<textarea class="field__input field__input--textarea" name="message" id="userMessage" placeholder="Message" required>n</textarea>
+								<textarea class="field__input field__input--textarea" name="message" id="userMessage" placeholder="Message" required></textarea>
 							</div>
 						</div>
 						<button class="contact-us__button button" type="submit">Send Message</button>

@@ -1,0 +1,34 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+    &__label {
+        @include fluid-text(16, 14);
+    }
+
+    &__input {
+        padding: 18px 30px;
+        border: var(--border);
+        border-radius: var(--border-radius);
+        height: var(--input-height);
+
+        @include hover {
+            background-color: var(--color-accent);
+        }
+
+        &:focus {
+            outline-color: var(--color-accent);
+        }
+
+        &::placeholder {
+            @include fluid-text(18, 16);
+            color: var(color-gray-alt);
+        }
+
+        &--textarea {
+            height: 190px;
+            resize: none;
+        }
+    }
+}
