@@ -1,4 +1,10 @@
 .radios {
+    @include fluid-text(18, 16);
+
     display: flex;
     column-gap: 35px;
+
+    @include mobile {
+        justify-content: center;
+    }
 }

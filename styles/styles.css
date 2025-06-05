@@ -195,7 +195,7 @@ h4 {
   --container-width: 1240px;
   --container-padding-x: 20px;
   --section-padding-y: 70px;
-  --input-height: 59px;
+  --input-height: 60px;
   --button-height: 68px;
   --transition-duration: 0.2s;
 }
@@ -247,6 +247,11 @@ h4 {
   flex-direction: column;
   row-gap: 5px;
 }
+@media (max-width: 767px) {
+  .field {
+    row-gap: 10px;
+  }
+}
 .field__label {
   font-size: clamp(14px, 1.1111111111vw, 16px);
 }
@@ -266,6 +271,11 @@ h4 {
     background-color: var(--color-accent);
   }
 }
+@media (max-width: 767px) {
+  .field__input {
+    padding-inline: 20px;
+  }
+}
 .field__input:focus {
   outline-color: var(--color-accent);
 }
@@ -283,9 +293,15 @@ h4 {
 }
 
 .radios {
+  font-size: clamp(16px, 1.25vw, 18px);
   display: flex;
   -moz-column-gap: 35px;
        column-gap: 35px;
+}
+@media (max-width: 767px) {
+  .radios {
+    justify-content: center;
+  }
 }
 
 .radio {
@@ -1373,11 +1389,15 @@ h4 {
 }
 
 .contact-us {
-  background-color: var(--color-gray);
-  border-radius: var(--border-radius-large);
-  padding: 60px 100px 80px;
   position: relative;
   overflow-x: hidden;
+}
+@media (min-width: 768px) {
+  .contact-us {
+    background-color: var(--color-gray);
+    border-radius: var(--border-radius-large);
+    padding: 60px 100px 80px;
+  }
 }
 .contact-us::after {
   --imageOffsetY: 62px;
@@ -1390,14 +1410,44 @@ h4 {
   height: calc(100% - var(--imageOffsetY) * 2);
   aspect-ratio: 1;
 }
+@media (max-width: 1023px) {
+  .contact-us::after {
+    display: none;
+  }
+}
 .contact-us__form, .contact-us__body {
   display: flex;
   flex-direction: column;
 }
-.contact-us__form {
-  row-gap: 40px;
-  max-width: 556px;
+@media (min-width: 1024px) {
+  .contact-us__form {
+    max-width: 556px;
+  }
+}
+@media (min-width: 768px) {
+  .contact-us__form {
+    row-gap: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-us__request-types, .contact-us__body {
+    background-color: var(--color-gray);
+  }
+}
+@media (max-width: 767px) {
+  .contact-us__request-types {
+    padding: 40px 30px 36px;
+    border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
+  }
 }
 .contact-us__body {
   row-gap: 25px;
+}
+@media (max-width: 767px) {
+  .contact-us__body {
+    row-gap: 20px;
+    padding: 0px 30px 50px;
+    border-radius: 0 0 var(--border-radius-large) var(--border-radius-large);
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=styles.css.map */

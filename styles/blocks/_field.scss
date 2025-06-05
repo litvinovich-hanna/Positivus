@@ -3,6 +3,10 @@
     flex-direction: column;
     row-gap: 5px;
 
+    @include mobile {
+        row-gap: 10px
+    }
+
     &__label {
         @include fluid-text(16, 14);
     }
@@ -15,6 +19,10 @@
 
         @include hover {
             background-color: var(--color-accent);
+        }
+
+        @include mobile {
+            padding-inline: 20px;
         }
 
         &:focus {
