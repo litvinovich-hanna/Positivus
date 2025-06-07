@@ -38,5 +38,26 @@
             height: 190px;
             resize: none;
         }
+
+        &--big-height {
+            height: 68px;
+        }
+
+        &--dark {
+            background-color: transparent;
+            border-color: var(--color-light);
+
+            @include hover {
+                background-color: var(--color-dark);
+            }
+
+            &:focus {
+                color: var(--color-accent);
+            }
+
+            &::placeholder {
+                color: var(--color-light);
+            }
+        }
     }
 }
