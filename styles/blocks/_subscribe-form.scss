@@ -4,4 +4,12 @@
     background-color: var(--color-dark-alt);
     border-radius: var(--border-radius);
     padding: 58px 40px;
+
+    @include tablet {
+        flex-direction: column;
+        row-gap: 22px;
+        padding: 30px;
+        width: 100%;
+        max-width: 450px;
+    }
 }
