@@ -10,7 +10,6 @@
 </head>
 <body>
 	<header class="header">
-
 		<div class="header__inner container">
 			<a href="/" class="header__logo logo">
 				<img src="./images/logo.svg" alt="Positivus" class="logo__image" width="220px" height="36px" loading="lazy">
@@ -18,23 +17,23 @@
 		<nav class="header__menu hidden-mobile">
 			<ul class="header__menu-list">
 				<li class="header__menu-item">
-					<a href="/" class="header__menu-link">About us</a>
+					<a href="#hero" class="header__menu-link">About us</a>
 				</li>
 				<li class="header__menu-item">
-					<a href="/" class="header__menu-link">Services</a>
+					<a href="#services" class="header__menu-link">Services</a>
 				</li>
 				<li class="header__menu-item">
-					<a href="/" class="header__menu-link">Use Cases</a>
+					<a href="#case-studies" class="header__menu-link">Use Cases</a>
 				</li>
 				<li class="header__menu-item">
 					<a href="/" class="header__menu-link">Pricing</a>
 				</li>
 				<li class="header__menu-item">
-					<a href="/" class="header__menu-link">Blog</a>
+					<a href="#reviews" class="header__menu-link">Blog</a>
 				</li>
 			</ul>
 		</nav>
-		<button class="header__button button button--transparent hidden-mobile" type="button">Request a quote</button>
+		<button class="header__button button button--transparent hidden-mobile" type="button"><a href="#contact-us">Request a quote</a></button>
 		<button class="header__burger-button burger-button visible-mobile" onclick="mobile0verlay.showModal()">
 			<span class="visually-hidden">Open navigation menu</span>
 		</button>
@@ -44,7 +43,7 @@
 
 	<main class="content">
 
-		<section class="section container section--hidden-x">
+		<section class="section container section--hidden-x" id="hero">
 			<div class="hero">
 				<div class="hero__main">
 					<div class="hero__body">
@@ -52,7 +51,7 @@
 						<div class="hero__description">
 							<p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
 						</div>
-						<button class="hero__button button" type="button">Book a consultation</button>
+						<button class="hero__button button" type="button"><a href="#contact-us">Book a consultation</a></button>
 					</div>
 					<img src="/images/hero-bg.svg" alt="" class="hero__image" width="600px" height="515px" loading="lazy">
 				</div>
@@ -82,15 +81,13 @@
 			</div>
 		</section>
 
-		<section class="section container">
-
+		<section class="section container" id="services">
 				<div class="section__header">
 					<h2 class="section__title puddle-bg">Services</h2>
 					<div class="section__description">
 						<p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
 					</div>
 				</div>
-
 				<div class="section__body">
 					<div class="services">
 						<ul class="services__list grid grid--2">
@@ -228,7 +225,7 @@
 									<div class="banner__description">
 										<p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
 									</div>
-									<button class="banner__button button" type="button">Get your free proposal</button>
+									<button class="banner__button button" type="button"><a href="#contact-us">Get your free proposal</a></button>
 								</div>
 								<img class="banner__image hidden-mobile" src="./images/services/banner-bg.svg" alt="" width="494px" height="394px" loading="lazy">
 							</div>
@@ -237,7 +234,7 @@
 				</div>
 		</section>
 
-		<section class="section container">
+		<section class="section container" id="case-studies">
 			<div class="section__header">
 				<h2 class="section__title puddle-bg">Case Studies</h2>
 				<div class="section__description">
@@ -279,7 +276,7 @@
 			</div>
 		</section>
 
-		<section class="section container">
+		<section class="section container" id="process">
 			<div class="section__header">
 				<h2 class="section__title puddle-bg">Our Working Process</h2>
 				<div class="section__description">
@@ -361,7 +358,7 @@
 			</div>
 		</section>
 
-		<section class="section container">
+		<section class="section container" id="team">
 			<div class="section__header">
 				<h2 class="section__title puddle-bg">Team</h2>
 				<div class="section__description">
@@ -522,7 +519,7 @@ Skilled in creating compelling, SEO-optimized content for various industries</p>
 			</div>
 		</section>
 
-		<section class="section container">
+		<section class="section container" id="reviews">
 			<div class="section__header">
 				<h2 class="section__title puddle-bg">Testimonials</h2>
 				<div class="section__description">
@@ -652,7 +649,7 @@ Skilled in creating compelling, SEO-optimized content for various industries</p>
 			</div>
 		</section>
 
-		<section class="section container">
+		<section class="section container" id="contact-us">
 			<div class="section__header">
 				<h2 class="section__title puddle-bg">Contact Us</h2>
 				<div class="section__description">
